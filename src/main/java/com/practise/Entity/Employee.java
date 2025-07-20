@@ -15,7 +15,7 @@ public class Employee {
 	
 	private String designation;
 	
-	private int salary;
+	private double salary;
 	
 	private String department;
 
@@ -43,11 +43,11 @@ public class Employee {
 		this.designation = designation;
 	}
 
-	public int getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 
-	public void setSalary(int salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 

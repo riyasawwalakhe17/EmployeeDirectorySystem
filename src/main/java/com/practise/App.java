@@ -20,10 +20,10 @@ public class App
 			System.out.println("----------------------------------------------------------------------------------------------------------------------------------------");
 			System.out.println("WELCOME TO EMPLOYEE DIRECTORY SYSTEM");
 			System.out.println("Please Select as per Requirement");
-			System.out.println("1. Add Employee Data");
+			System.out.println("1. Add new employee");
 			System.out.println("2. Search employee by name");
-			System.out.println("3. Updated Salary Details");
-			System.out.println("4. Get Deleted Employee Details");
+			System.out.println("3. Update salary");
+			System.out.println("4. Delete employee by ID");
 
 			System.out.println("Please Enter your choice: ");
 			int choice = sc.nextInt();
@@ -31,25 +31,22 @@ public class App
 			UserRepository user = new UserRepository();
 			switch (choice) {
 			case 1:
-				System.out.println("Please Enter User ID: ");
-				int empid = sc.nextInt();
-				user.addData();
+				user.addData(sc);
 				break;
-				
+
 			case 2:
-				System.out.println("Please Enter Employee name: ");
-				String name = sc.next();
-				user.searchData();
+				user.searchData(sc);
 				break;
-				
+
 			case 3:
-				user.getUpdatedData();
+				user.updateData(sc);
 				break;
-			
+
 			case 4:
-				user.getDeletedData();
+				user.deleteData(sc);
 				break;
 			}
-    	}
+
+		}
     }
 }
