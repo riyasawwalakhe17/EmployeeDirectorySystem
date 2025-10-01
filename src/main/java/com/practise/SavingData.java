@@ -28,6 +28,7 @@ public class SavingData {
 		emp.setDepartment("IT");
 		emp.setaCard(acard);
 
+		System.out.println("Data saved successfully");
 		session.persist(emp);
 		transaction.commit();
 		session.close();
