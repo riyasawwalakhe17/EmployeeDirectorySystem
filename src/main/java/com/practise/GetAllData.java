@@ -17,7 +17,7 @@ public class GetAllData {
 
 		List<Employee> empList = session.createQuery("select s FROM Employee s", Employee.class).getResultList();
 
-		System.out.println("List of Employees");
+		System.out.println("List of Employees are:");
 		empList.stream().forEach(k -> System.out.println(k.toString()));
 
 		transaction.commit();
