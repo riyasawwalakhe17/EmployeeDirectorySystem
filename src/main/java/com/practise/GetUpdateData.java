@@ -29,7 +29,7 @@ public class GetUpdateData {
 		emp.getaCard().setIssueDate("26-02-2026");
 		emp.getaCard().setActive(false);
 
-		System.out.println("Data updated successfully");
+		System.out.println("Employee Data updated successfully");
 		transaction.commit();
 		session.close();
 	}
