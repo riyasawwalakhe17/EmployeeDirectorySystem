@@ -20,6 +20,6 @@ public static void main(String[] args) {
 		
 		transaction.commit();
 		session.close();
-		System.out.println("DATA for student with id " + id + " : " + employee.toString());
+		System.out.println("DATA for employee with id " + id + " : " + employee.toString());
 	}
 }
